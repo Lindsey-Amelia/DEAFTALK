@@ -3,78 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silent Sign Talk</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>DEAFTALK - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-
-<header>
-    <h1>Silent Sign Talk</h1>
-    <p>Connecting interpreters and deaf</p>
-</header>
-
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="#Find an Interpreter">Find an Interpreter</a>
-</nav>
-
-<div class="container">
-    <section id="home">
-        <h2>Our Mission</h2>
-        <p>Where communication knows no bounds</p>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div>Interpreter connection: Connecting deaf individuals with professional interpreters.</div>
-        <div>Remote interpretation: Accessing sign language interpretation remotely.</div>
-        <div>On-Demand interpreters: Instantly booking interpreters for urgent needs.</div>
-        <div>Educational support: Enhancing learning experiences for deaf students.</div>
-        <div>Event interpretation: Providing sign language interpretation for events.</div>
-        <div>Legal interpreting services: Ensuring accurate interpretation for legal proceedings.</div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-white text-xl font-semibold">DEAFTALK</span>
             </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-white">Home</a>
+                <a href="#" class="text-white">Profile</a>
+                <a href="#" class="text-white">Settings</a>
+                <a href="#" class="text-white">Find an Interpreter</a>
+                <a href="#" class="text-white">Contact Us</a>
             </div>
-            <div>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-            </div>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </section>
-    <section id="Find an Interpreter" class="Find an Interpreter">
-        <h2>Find an interpreter</h2>
-        <div>
-            <video id="localVideo" autoplay muted></video>
-            <video id="remoteVideo" autoplay></video>
         </div>
-        <button id="starCall">Start Call</button>
-    </section>
-</div>
+    </nav>
 
-<footer>
-    <p>&copy; 2024 Silent Sign Talk</p>
-</footer>
+    <!-- Main content -->
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Hero section -->
+        <section class="bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg shadow-lg text-white p-8 mb-8">
+            <div class="md:flex md:items-center">
+                <div class="md:w-1/2 mb-4 md:mb-0">
+                    <h2 class="text-4xl font-semibold mb-4">Connect with the Deaf Community</h2>
+                    <p class="text-lg mb-4">Discover new friends, join discussions, and expand your network in a community designed for the deaf and hard of hearing.</p>
+                    <a href="#" class="inline-block bg-white text-blue-500 hover:bg-blue-400 hover:text-white py-2 px-6 rounded-full font-semibold">Get Started</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://i.pinimg.com/474x/0e/f0/16/0ef016719a58320d1a0cb3d2a3b82cfc.jpg" alt="Deaf community" class="rounded-lg w-52 h-52">
+                </div>
+            </div>
+        </section>
 
-<script src="scripts.js"></script>
+        <!-- Features section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature card 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-2">Instant Messaging</h3>
+                <p class="text-gray-600 mb-4">Chat with friends and groups in real-time using our secure messaging system.</p>
+                <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</a>
+            </div>
+
+            <!-- Feature card 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-2">Community Forums</h3>
+                <p class="text-gray-600 mb-4">Participate in discussions, share experiences, and learn from others in our vibrant forums.</p>
+                <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</a>
+            </div>
+
+            <!-- Feature card 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-2">Events and Meetups</h3>
+                <p class="text-gray-600 mb-4">Discover local and global events, workshops, and meetups tailored for the deaf community.</p>
+                <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Testimonials section -->
+        <section class="mt-12">
+            <h2 class="text-3xl font-semibold mb-6">What our users are saying</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <blockquote class="text-gray-600 italic mb-4">
+                        "DEAFTALK has been a game-changer for me. I've made connections and found support that I couldn't find anywhere else."
+                    </blockquote>
+                    <cite class="block font-semibold">John Doe</cite>
+                    <p class="text-gray-500">Graphic Designer</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <blockquote class="text-gray-600 italic mb-4">
+                        "As someone who is hard of hearing, finding a platform like DEAFTALK has made communication and socializing much easier and more enjoyable."
+                    </blockquote>
+                    <cite class="block font-semibold">Jane Smith</cite>
+                    <p class="text-gray-500">Teacher</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us section -->
+        <section class="mt-12">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
+                <p class="text-lg mb-6">Have questions or feedback? Reach out to us!</p>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required></textarea>
+                    </div>
+                    <button type="submit" class="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full font-semibold">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
